@@ -116,6 +116,9 @@ public class ProductController {
         return produitMargeList.toString();
     }
 
-
+    @GetMapping(value = "/Produits/tri")
+    public List<Product> trierProduitsParOrdreAlphabetique(){
+        return productDao.findAllByOrderByNom();
+    }
 
 }
