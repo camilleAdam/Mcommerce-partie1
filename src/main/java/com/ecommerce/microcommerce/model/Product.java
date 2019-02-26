@@ -1,6 +1,7 @@
 package com.ecommerce.microcommerce.model;
 
 import com.fasterxml.jackson.annotation.JsonFilter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Entity;
@@ -75,6 +76,6 @@ public class Product {
                 "id=" + id +
                 ", nom='" + nom + '\'' +
                 ", prix=" + prix +
-                '}';
+                "}:";
     }
 }
