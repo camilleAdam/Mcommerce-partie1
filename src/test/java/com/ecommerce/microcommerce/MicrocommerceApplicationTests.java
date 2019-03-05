@@ -13,4 +13,9 @@ public class MicrocommerceApplicationTests {
 	public void contextLoads() {
 	}
 
+	@Test
+	public void doSomething(){
+
+	}
+
 }
