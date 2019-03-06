@@ -29,6 +29,8 @@ public class ProductController {
     @Autowired
     private ProductDao productDao;
 
+    String somethng = "";
+
 
     //Récupérer la liste des produits
 
@@ -124,6 +126,11 @@ public class ProductController {
     @GetMapping(value = "/Produits/tri")
     public List<Product> trierProduitsParOrdreAlphabetique(){
         return productDao.findAllByOrderByNom();
+    }
+
+    public String saySomething(){
+        somethng = "somethng";
+        return somethng;
     }
 
 }
